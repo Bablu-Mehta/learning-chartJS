@@ -3,6 +3,7 @@ import "./App.css";
 import BarChart from "./components/BarChart";
 import { UserData } from "./data";
 import LineChart from "./components/LineChart";
+import PieChart from "./components/PieChart";
 
 function App() {
   const [userData, setUserData] = useState({
@@ -26,6 +27,10 @@ function App() {
 
       <div style={{ width: 500, display: "inline-block", margin: "2rem" }}>
         <LineChart chartData={userData} />
+      </div>
+
+      <div style={{ width: 500, display: "inline-block", margin: "2rem" }}>
+        <PieChart chartData={userData} />
       </div>
     </>
   );
